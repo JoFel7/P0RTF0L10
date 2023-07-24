@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
     <title>Josue Feliciano | Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Create section for my name, a recent Photo, add links -->
     <header>
-        <h1>Josue Feliciano</h1>
-        <nav>
+      <!-- <nav>
             <ul>
                 <li>
                     <a href="#about-me">About Me</a>
@@ -26,30 +26,133 @@
                     <a href="#resume">Resume</a>
                 </li>
             </ul>
-        </nav>
+        </nav> -->
+
+      <nav class="border-gray-200 bg-gray-900">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a class="flex items-center bg-teal-200">
+            <span
+              class="self-center text-2xl text-gray-600 font-semibold whitespace-nowrap pl-5 p-2"
+              >Josue Feliciano</span
+            >
+          </a>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg bg-gray-800 md:bg-gray-900 border-gray-700 md:flex-row md:space-x-8 md:mt-0 md:border-0"
+            >
+              <li>
+                <a
+                  href="#about-me"
+                  class="block py-2 pl-3 pr-4 text-teal-200 md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:p-0 underlined"
+                  >About Me</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#work"
+                  class="block py-2 pl-3 pr-4 text-teal-200 md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:p-0 underlined"
+                  >Work</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact-me"
+                  class="block py-2 pl-3 pr-4 text-teal-200 md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:p-0 underlined"
+                  >Contact Me</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://docs.google.com/document/d/1yirfWljOECrz_AW_bCpx_5kf7sJeASQfkGyauWDwpI4/edit?usp=sharing"
+                  class="block py-2 pl-3 pr-4 text-teal-200 md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent md:p-0 underlined"
+                  >Resume</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
-    <figure class="hero">
-        <h2>Welcome!</h2>
-    </figure>
-    <article class="content">
-        <section class="about-me">
-            <figure>
-                <img src="./assets/images/02-portfolio-4.jpg" class="float-left" />
-                <h1>Search Engine Optimization</h1>
-            </figure>
-        </section>
-        <section id="work" class="online-reputation-management">
-            <img src="./assets/images/02-portfolio-1.jpg" class="float-right" />
-            <h1>Online Reputation Management</h1>
-        </section>
-        <section id="contact-me" class="social-media-marketing">
-            <img src="./assets/images/social-media-marketing.jpg" class="float-left" />
-            <h2>Social Media Marketing</h2>
-        </section>
-        <section id="resume">
-            <img src="./assets/images/social-media-marketing.jpg" class="float-left" />
-            <h2></h2>
-        </section>
+    <div
+      class="bg-center bg-cover bg-no-repeat bg-[url('./assets/images/02-hero-bg.jpg')] bg-gray-700 bg-blend-multiply"
+    >
+      <a class="flex flex-row-reverse place-items-end bg-teal-200">
+        <span
+          class="self-center text-2xl text-gray-600 font-semibold whitespace-nowrap pr-5 p-2"
+          >Welcome!</span
+        >
+      </a>
+    </div>
+    <article class="">
+      <section class="flex flex-row about-me items-center">
+        <h2
+          class="text-4xl font-bold text-blue-900 pr-1 border-solid border-r-4 border-blue-900 mr-3"
+        >
+          About Me
+        </h2>
+        <p>
+          My name is Josue Feliciano, I was born in Nyack, New York, and moved
+          to Florida when I was about 4yrs old. I was very interested in
+          technology at a young age opening anything I could get my hands on and
+          see how it works. That curiousity transfered very nicely when I found
+          out about computers. In Highschool I joined the STEM program and
+          studied Robotics, Game Design and Simulation. Once I graduated I went
+          into a Vocational course for machining. And thats what I've been doing
+          for the past 4 years. Wanting to something different I am currently
+          enrolled in UCF-Coding Bootcamp so i can become a web developer.
+        </p>
+      </section>
+      <section id="work" class="online-reputation-management">
+        <div
+          class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+        >
+          <a href="#">
+            <img
+              class="rounded-t-lg"
+              src="./assets/images/SIP_SAVORS_.png"
+              alt=""
+            />
+          </a>
+          <div class="p-5">
+            <a href="#">
+              <h5
+                class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+              >
+                SipSavors
+              </h5>
+            </a>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Combining music and drink to help you with all your cocktail
+              needs. We pair the perfect song to your cocktail recipe of choice.
+            </p>
+            <a
+              href="https://yanalejandro.github.io/SIP_SAVORS/"
+              class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            >
+              Go To Site
+              <svg
+                class="w-3.5 h-3.5 ml-2"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M1 5h12m0 0L9 1m4 4L9 9"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="contact-me" class="">
+      </section>
     </article>
-</body>
+  </body>
 </html>
